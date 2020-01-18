@@ -1,0 +1,33 @@
+@import './../../mySCSS/utils';
+
+.modalStyles{
+    @include flexCenter(row, center, center);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    transition: 0.3s all cubic-bezier(1, 0, 0, 1);
+
+    .iconStyles{
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+.modalCloseStyles{
+    transform: translateY(-100%);
+}
+
+.modalOpenStyles{
+    transform: translateY(0);
+}

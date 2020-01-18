@@ -1,0 +1,17 @@
+@import './../../mySCSS/utils';
+.buttonStyles {
+    border-radius: 3px;
+    padding: 6px 12px;
+    height: 34px;
+    color: white;
+    background-color: #34495e;
+    border: 2px solid #34495e;
+    cursor: pointer;
+    @extend %clear-outline;
+    @extend %common-transition;
+
+    &:hover {
+      background-color: lighten(#34495e, 10%);
+      border: 2px solid lighten(#34495e, 10%);
+    }
+}
