@@ -20,6 +20,9 @@ const Wrap = (props) => {
         case "red":
             warpClasses.push(classes.red);
             break;
+        case "transparent":
+            warpClasses.push(classes.transparent);
+            break;
 
         default:
             break;

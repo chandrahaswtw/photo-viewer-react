@@ -29,7 +29,7 @@ const Albums = (props) => {
                 return (
                     <div className={classes.albumStyles} key={index} onClick={()=>{history.push(`/Albums/Photos/${el.id}`)}}>
                         <section className={classes.section1}>
-                            <Wrap type="blue">USERNAME : {userName}</Wrap>
+                            <Wrap>USERNAME : {userName}</Wrap>
                         </section>
                         <section className={classes.section2}>
                             <Wrap type="white">ALBUM TITLE</Wrap> <br />

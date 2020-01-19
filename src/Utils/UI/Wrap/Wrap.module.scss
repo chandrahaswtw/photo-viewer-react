@@ -1,37 +1,43 @@
 .wrapStyles {
-    display: inline-block;
-    padding: .25rem .4rem;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-align: center;
-    white-space: nowrap;
-    border-radius: .25rem;
-    color: #fff;
-    background-color: #6c757d;
+  display: inline-block;
+  padding: 0.25rem 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: lighten(#6c757d, 10%) ;
 }
 
-.blue{
-    color: #fff;
-    background-color: #007bff;
+.blue {
+  color: #fff;
+  background-color: #007bff;
 }
 
-.white{
-    color: black;
-    background-color: #fff;
+.white {
+  color: black;
+  background-color: #fff;
 }
 
-.yellow{
-    color: #212529;
-    background-color: #ffc107;
-    border-color: #ffc107;
+.yellow {
+  color: #212529;
+  background-color: #ffc107;
+  border-color: #ffc107;
 }
 
-.green{
-    color: #fff;
-    background-color: #28a745;
+.green {
+  color: #fff;
+  background-color: #28a745;
 }
 
 .red {
-    color: #fff;
-    background-color: #dc3545;
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.transparent {
+    color: #212529;
+    background-color: lighten( #fad390, 10%);
+
 }
