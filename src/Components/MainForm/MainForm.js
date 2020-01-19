@@ -8,6 +8,8 @@ import { withRouter, Switch, Route, Redirect } from 'react-router-dom';
 import Loader from './../../Utils/UI/Loader/Loader';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBackward } from '@fortawesome/free-solid-svg-icons';
 
 const MainForm = (props) => {
 
@@ -19,11 +21,12 @@ const MainForm = (props) => {
         albumCall(["https://jsonplaceholder.typicode.com/albums", "https://jsonplaceholder.typicode.com/users"]);
     }
 
+    // TOAST ON DATA FETCH 
     useEffect(() => {
 
         if (albumState.data) {
             toast.configure({
-                autoClose: 3000,
+                autoClose: 1200,
                 draggable: true
             });
 
@@ -40,7 +43,7 @@ const MainForm = (props) => {
                 <div className={classes.MainForm}>
                     <Switch>
                         <Route path={props.match.url} exact render={() => { return (<Button onClickHandler={btnOnClickHandler}>FETCH THE DATA</Button>) }}></Route>
-                        <Route path={`${props.match.url}/Photos/:id`} exact render={() => { return (<Button onClickHandler={() => { props.history.push("/Albums") }}>GO BACK</Button>) }}></Route>
+                        <Route path={`${props.match.url}/Photos/:id`} exact render={() => { return (<Button onClickHandler={() => { props.history.push("/Albums") }}>GO BACK &nbsp; <FontAwesomeIcon icon={faBackward}></FontAwesomeIcon>  </Button>) }}></Route>
                     </Switch>
                 </div>
                 <div className={classes.albumPhoto}>

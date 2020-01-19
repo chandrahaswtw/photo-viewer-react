@@ -1,6 +1,6 @@
 // CUSTOM HOOK TO FETCH THE DATA
 
-import React, { useCallback, useReducer } from 'react';
+import { useCallback, useReducer } from 'react';
 import axios from 'axios';
 
 const initialState = {

@@ -2,11 +2,11 @@
 
 .gridContainer {
   display: grid;
-  grid-template-rows: 20vh 67vh;
+  grid-template-rows: 20vh 1fr;
 
   .MainForm {
     @include flexCenter(row, center, center);
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: rgba(0, 0, 0, 0.05);
     grid-row-start: 1;
     grid-row-end: 2;
     height: 100%;

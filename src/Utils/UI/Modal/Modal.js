@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import classes from './Modal.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Modal = (props) => {
     
@@ -16,8 +16,9 @@ const Modal = (props) => {
 
     return (
         <div className={modalStyles.join(" ")}>
-            <span className={classes.iconStyles} onClick={()=>{props.modalCloseHandler()}}><FontAwesomeIcon icon={faWindowClose} size="2x"></FontAwesomeIcon></span>
+            <span className={classes.iconStyles} onClick={()=>{props.modalCloseHandler()}}><FontAwesomeIcon icon={faTimesCircle} size="4x"></FontAwesomeIcon></span>
             <img src= {props.url} alt=""/>
+            <div className={classes.whiteBackground} onClick={()=>{props.modalCloseHandler()}}></div>
         </div>
     )
 }

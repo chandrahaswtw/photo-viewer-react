@@ -1,33 +1,115 @@
-@import './../../mySCSS/utils';
+@import "./../../mySCSS/utils";
 
-.modalStyles{
-    @include flexCenter(row, center, center);
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 1000;
-    transition: 0.3s all cubic-bezier(1, 0, 0, 1);
+.modalStyles {
+  @include flexCenter(row, center, center);
+  @extend %position-fixed;
+  @extend %common-transition;
+  z-index: 1000;
 
-    .iconStyles{
-        position: absolute;
-        top: 20px;
-        right: 25px;
-        color: white;
-        cursor: pointer;
+  .iconStyles {
+    position: absolute;
+    top: calc(50% - 32px);
+    right: 50px;
+    color: white;
+    cursor: pointer;
 
-        &:hover {
-            color: red;
-        }
+    &:hover {
+      color: lighten(#ccc, 30%);
+      animation: spin 0.3s 0s 1 linear;
     }
+
+    @media (max-width: 450px) {
+        top: 100px;
+        right: calc(50% - 32px);
+      }
+  }
+
+  .whiteBackground {
+    @extend %position-fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  img {
+    background: url("./../../Assets/Gif/Spinner_loader.gif") center no-repeat;
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    @extend %common-transition;
+
+    @media (max-width: 870px) {
+      width: 400px;
+      height: 400px;
+    }
+
+    @media (max-width: 660px) {
+      width: 300px;
+      height: 300px;
+    }
+
+    @media (max-width: 550px) {
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (max-width: 450px) {
+      width: 100px;
+      height: 100px;
+    }
+  }
 }
 
-.modalCloseStyles{
-    transform: translateY(-100%);
+.modalOpenStyles {
+  transform: translateY(0);
+  .whiteBackground {
+    animation: moveIn 0.3s ease-out forwards;
+  }
 }
 
-.modalOpenStyles{
-    transform: translateY(0);
+.modalCloseStyles {
+  transform: translateX(100%);
+  .whiteBackground {
+    animation: moveOut 0.3s ease-out linear;
+  }
+}
+
+@keyframes moveIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveOut {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
 }

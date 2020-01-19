@@ -1,18 +1,22 @@
-import React, { useState } from 'react';
+import React, { useCallback } from 'react';
 import classes from './Albums.module.scss';
 import Wrap from './../../../Utils/UI/Wrap/Wrap'
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter} from 'react-router-dom';
 
 
 const Albums = (props) => {
-    const contentGenerator = () => {
+
+    // ALBUMS DOM GENERATOR
+    const theData = props.albumState.data;
+    const history = props.history;
+    const contentGenerator = useCallback(() => {
         var theContent = []
-        if (props.albumState.data) {
+        if (theData) {
            
-            theContent = props.albumState.data[0].data.map((el, index) => {
+            theContent = theData[0].data.map((el, index) => {
                 var userName = "";
               
-                for(let i of props.albumState.data[1].data)
+                for(let i of theData[1].data)
                 {
                     if(el.userId === i.id)
                     {
@@ -23,7 +27,7 @@ const Albums = (props) => {
                 }
 
                 return (
-                    <div className={classes.albumStyles} key={index} onClick={()=>{props.history.push(`/Albums/Photos/${el.id}`)}}>
+                    <div className={classes.albumStyles} key={index} onClick={()=>{history.push(`/Albums/Photos/${el.id}`)}}>
                         <section className={classes.section1}>
                             <Wrap type="blue">USERNAME : {userName}</Wrap>
                         </section>
@@ -38,7 +42,8 @@ const Albums = (props) => {
         else
             theContent.push(<div><br /><br /><br /><Wrap type="red">NO RECORDS TO DISPLAY</Wrap></div>)
         return theContent;
-    }
+    },[theData, history])
+
     return (
         <div className={classes.wrapper}>
             {contentGenerator()}
