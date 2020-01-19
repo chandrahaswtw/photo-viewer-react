@@ -40,7 +40,6 @@ const Photos = (props) => {
     // PHOTOS DOM GENERATOR
     const theData = photoState.data;
     const theID = props.match.params.id;
-    console.log(theData);
     const photoDomGenerator = useCallback(() => {
         var theContent = [];
         if (theData) {

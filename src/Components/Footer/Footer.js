@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './Footer.module.scss';
-import Underline from './../../Utils/UI/Underline/Underline';
 
 const Footer = () => {
     return (
