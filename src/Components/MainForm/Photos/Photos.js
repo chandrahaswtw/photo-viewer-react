@@ -26,12 +26,16 @@ const Photos = (props) => {
     // MODAL CLOSE HANDLER
     const modalCloseHandler = useCallback(() => {
         setModalState("HIDE");
+        setTimeout(() => {
+            setUrl("");
+        }, 200);
     },[setModalState])
 
     // ON LOAD CALL
     useEffect(() => {
         photoCall(["https://jsonplaceholder.typicode.com/photos"]);
     }, [photoCall])
+
 
     // PHOTOS DOM GENERATOR
     const theData = photoState.data;
