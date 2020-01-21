@@ -1,4 +1,4 @@
-@import './../../mySCSS/utils';
+@import './../../Utils/mySCSS/utils';
 
 .loaderDiv{
     @include flexCenter(row, center, center);

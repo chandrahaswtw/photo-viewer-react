@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import classes from './Photos.module.scss';
 import useFetch from './../../../Utils/Hooks/useFetch';
-import Wrap from './../../../Utils/UI/Wrap/Wrap';
+import Wrap from './../../../UI/Wrap/Wrap';
 import { withRouter } from 'react-router-dom';
-import Button from './../../../Utils/UI/Button/Button';
-import Loader from './../../../Utils/UI/Loader/Loader';
-import Underline from './../../../Utils/UI/Underline/Underline';
-import Modal from './../../../Utils/UI/Modal/Modal';
+import Button from './../../../UI/Button/Button';
+import Loader from './../../../UI/Loader/Loader';
+import Underline from './../../../UI/Underline/Underline';
+import Modal from './../../../UI/Modal/Modal';
 
 const Photos = (props) => {
 

@@ -1,4 +1,4 @@
-@import "./../../mySCSS/utils";
+@import './../../Utils/mySCSS/utils';
 
 .modalStyles {
   @include flexCenter(row, center, center);
@@ -33,7 +33,7 @@
   }
 
   img {
-    background: url("./../../Assets/Gif/Spinner_loader.gif") center no-repeat;
+    background: url("./../../Utils/Assets/Gif/Spinner_loader.gif") center no-repeat;
     width: 600px;
     height: 600px;
     object-fit: cover;

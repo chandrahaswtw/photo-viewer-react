@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import classes from './Albums.module.scss';
-import Wrap from './../../../Utils/UI/Wrap/Wrap'
+import Wrap from './../../../UI/Wrap/Wrap'
 import { withRouter} from 'react-router-dom';
 
 
