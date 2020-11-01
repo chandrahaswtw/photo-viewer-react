@@ -1,3 +1,17 @@
+# REACT PHOTO VIEWER
+
+You can have a quick look [here]("https://chandrahaswtw.github.io/photo-viewer-react/").
+
+It's developed in React and uses SASS as CSS pre-compiler. This uses the following JSONPlaceHolder API's:
+- ALBUMS API : ```https://jsonplaceholder.typicode.com/albums```,
+- USERS API : ```https://jsonplaceholder.typicode.com/users```,
+- PHOTOS API: ```https://jsonplaceholder.typicode.com/photos```
+
+## PROBLEM STATEMENT:
+It displays all the users, their names and the albums associated with the users on home page. When clicked on any album, routes you to a new page which displays all the photos associated with the Album in ```150 X 150``` pixel thumbnail. And when clicked on the thumbnail, it opens up ```600 X 600``` image.
+
+## OTHER INFORMATION: 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
