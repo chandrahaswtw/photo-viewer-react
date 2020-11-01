@@ -1,6 +1,6 @@
 # REACT PHOTO VIEWER
 
-You can have a quick look [here]("https://chandrahaswtw.github.io/photo-viewer-react/").
+You can have a [quick look here]("https://chandrahaswtw.github.io/photo-viewer-react/")
 
 It's developed in React and uses SASS as CSS pre-compiler. This uses the following JSONPlaceHolder API's:
 - ALBUMS API : ```https://jsonplaceholder.typicode.com/albums```,
