@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/photo-viewer-react/static/css/main.8945347a.chunk.css",
+    "main.js": "/photo-viewer-react/static/js/main.8a2bf21b.chunk.js",
+    "main.js.map": "/photo-viewer-react/static/js/main.8a2bf21b.chunk.js.map",
+    "runtime-main.js": "/photo-viewer-react/static/js/runtime-main.5591c81e.js",
+    "runtime-main.js.map": "/photo-viewer-react/static/js/runtime-main.5591c81e.js.map",
+    "static/css/2.5dbdccff.chunk.css": "/photo-viewer-react/static/css/2.5dbdccff.chunk.css",
+    "static/js/2.822e2b93.chunk.js": "/photo-viewer-react/static/js/2.822e2b93.chunk.js",
+    "static/js/2.822e2b93.chunk.js.map": "/photo-viewer-react/static/js/2.822e2b93.chunk.js.map",
+    "index.html": "/photo-viewer-react/index.html",
+    "precache-manifest.2722d0c9eed0f88b218bcc78de099e2e.js": "/photo-viewer-react/precache-manifest.2722d0c9eed0f88b218bcc78de099e2e.js",
+    "service-worker.js": "/photo-viewer-react/service-worker.js",
+    "static/css/2.5dbdccff.chunk.css.map": "/photo-viewer-react/static/css/2.5dbdccff.chunk.css.map",
+    "static/css/main.8945347a.chunk.css.map": "/photo-viewer-react/static/css/main.8945347a.chunk.css.map",
+    "static/js/2.822e2b93.chunk.js.LICENSE": "/photo-viewer-react/static/js/2.822e2b93.chunk.js.LICENSE",
+    "static/media/App.css": "/photo-viewer-react/static/media/B612-Regular.e8ed14e1.ttf",
+    "static/media/Modal.module.scss": "/photo-viewer-react/static/media/Spinner_loader.8032e501.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5591c81e.js",
+    "static/css/2.5dbdccff.chunk.css",
+    "static/js/2.822e2b93.chunk.js",
+    "static/css/main.8945347a.chunk.css",
+    "static/js/main.8a2bf21b.chunk.js"
+  ]
+}
